@@ -1,6 +1,31 @@
-import './style.css'
+import "./style.css";
 
-document.querySelector('#app').innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`
+const viperImageUrl = "/images/viper.png";
+const enemyImageUrl = "/images/enemy_small.png";
+const shotImageUrl = "/images/viper_single_shot.png";
+
+let isGameReady = false;
+let viperImage;
+let enemyImage;
+let shotImage;
+
+async function loadImage(url) {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.addEventListener("load", () => {
+      resolve(img);
+    });
+    img.src = url;
+  });
+}
+
+Promise.all([
+  loadImage(viperImageUrl),
+  loadImage(enemyImageUrl),
+  loadImage(shotImageUrl),
+]).then(([v, e, s]) => {
+  viperImage = v;
+  enemyImage = e;
+  shotImage = s;
+  isGameReady = true;
+});
