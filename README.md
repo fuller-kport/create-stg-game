@@ -1,5 +1,8 @@
 # シューティングゲームをつくる
 
+JavaScript で 2D ゲームをつくる授業で使用したソースコードです。以下の書籍の内容を大いに参考しています。
+https://www.amazon.co.jp/dp/4297110857
+
 ### ゲームループ（[デモ](https://codepen.io/chooblarin/pen/c86459b7160ee09766a236cdf187c1d2)）
 
 ```js
