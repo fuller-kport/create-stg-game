@@ -1,8 +1,8 @@
 import "./style.css";
 
-const viperImageUrl = "/images/viper.png";
-const enemyImageUrl = "/images/enemy_small.png";
-const shotImageUrl = "/images/viper_single_shot.png";
+const viperImageUrl = "images/viper.png";
+const enemyImageUrl = "images/enemy_small.png";
+const shotImageUrl = "images/viper_single_shot.png";
 
 let isGameReady = false;
 let viperImage;
